@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
@@ -58,14 +57,14 @@ const Projects = () => {
           </span>
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid lg:grid-cols-2 gap-8 mb-12 lg:grid-rows-2">
           {projects.filter(p => p.featured).map((project, index) => (
-            <Card key={index} className="group p-8 bg-white/5 backdrop-blur-sm border-stone-600/20 hover:border-stone-600/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-stone-600/20">
+            <Card key={index} className="group p-8 bg-white/5 backdrop-blur-sm border-stone-600/20 hover:border-stone-600/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-stone-600/20 flex flex-col h-full">
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-2xl font-bold text-white group-hover:text-slate-300 transition-colors">
                   {project.title}
                 </h3>
-                <Button asChild size="sm" className="bg-slate-700/50 hover:bg-slate-600/70 text-white border border-slate-600/50 hover:border-slate-500/70">
+                <Button asChild size="sm" className="bg-slate-700/50 hover:bg-slate-600/70 text-white border border-slate-600/50 hover:border-slate-500/70 flex-shrink-0">
                   <a href={project.repo} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
                     <Github size={18} />
                     <span className="hidden sm:inline">GitHub</span>
@@ -73,11 +72,11 @@ const Projects = () => {
                 </Button>
               </div>
               
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <p className="text-gray-300 mb-6 leading-relaxed flex-grow">
                 {project.description}
               </p>
               
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mt-auto">
                 {project.tags.map((tag, tagIndex) => (
                   <span 
                     key={tagIndex} 
