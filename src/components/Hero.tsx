@@ -47,7 +47,7 @@ const Hero = () => {
             >
               <a href="https://drive.google.com/file/d/1x_ZSYQ3GtoukjiefktiORZYK_GG8TD_t/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2" size={20} />
-                Download Resume
+                View Resume
               </a>
             </Button>
             
