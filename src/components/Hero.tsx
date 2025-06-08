@@ -7,15 +7,15 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-        <div className="absolute top-3/4 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-pink-500/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-2000"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-slate-600/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div className="absolute top-3/4 right-1/4 w-96 h-96 bg-stone-600/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-gray-600/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-2000"></div>
       </div>
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-slate-400 via-stone-500 to-gray-500 bg-clip-text text-transparent">
               Rishiraj Bal
             </span>
           </h1>
@@ -32,7 +32,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               asChild 
-              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-to-r from-slate-600 to-stone-700 hover:from-slate-700 hover:to-stone-800 text-white px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105"
             >
               <a href="https://github.com/Rishirajbal" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2" size={20} />
@@ -43,7 +43,7 @@ const Hero = () => {
             <Button 
               asChild 
               variant="outline" 
-              className="border-purple-500 text-purple-400 hover:bg-purple-500/20 px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105"
+              className="border-stone-600 text-stone-400 hover:bg-stone-600/20 px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105"
             >
               <a href="https://drive.google.com/file/d/1x_ZSYQ3GtoukjiefktiORZYK_GG8TD_t/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2" size={20} />
@@ -54,7 +54,7 @@ const Hero = () => {
             <Button 
               asChild 
               variant="ghost" 
-              className="text-white hover:text-blue-400 px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105"
+              className="text-white hover:text-slate-300 px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105"
             >
               <a href="#contact">
                 <Mail className="mr-2" size={20} />

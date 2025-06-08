@@ -6,32 +6,32 @@ const Skills = () => {
     {
       title: "Programming Languages",
       skills: ["Python", "C/C++", "JavaScript", "SQL"],
-      color: "from-blue-500 to-cyan-500"
+      color: "from-slate-600 to-gray-600"
     },
     {
       title: "AI & Machine Learning",
       skills: ["ANN", "CNN", "Reinforcement Learning", "Deep Learning", "Quantum ML", "Computer Vision"],
-      color: "from-purple-500 to-pink-500"
+      color: "from-stone-600 to-slate-600"
     },
     {
       title: "Web & Databases",
       skills: ["HTML", "CSS", "React", "MySQL", "Oracle SQL", "Flask"],
-      color: "from-green-500 to-emerald-500"
+      color: "from-gray-600 to-stone-600"
     },
     {
       title: "Tools & Platforms",
       skills: ["Docker", "Unity", "Arduino", "GitHub", "Power BI", "Tableau"],
-      color: "from-orange-500 to-red-500"
+      color: "from-zinc-600 to-gray-600"
     },
     {
       title: "Cloud & Development",
       skills: ["Google Cloud Platform", "Ubuntu", "VS Code", "Visual Studio"],
-      color: "from-indigo-500 to-purple-500"
+      color: "from-slate-700 to-stone-700"
     },
     {
       title: "Blockchain & Crypto",
       skills: ["Solidity", "Circom", "ZK-SNARKs", "Smart Contracts", "Web3"],
-      color: "from-yellow-500 to-orange-500"
+      color: "from-stone-700 to-zinc-700"
     }
   ];
 
@@ -39,14 +39,14 @@ const Skills = () => {
     <section id="skills" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-slate-400 to-stone-500 bg-clip-text text-transparent">
             Technical Skills
           </span>
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="p-6 bg-white/5 backdrop-blur-sm border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 transform hover:-translate-y-2 group">
+            <Card key={index} className="p-6 bg-white/5 backdrop-blur-sm border-stone-600/20 hover:border-stone-600/40 transition-all duration-300 transform hover:-translate-y-2 group">
               <div className="mb-4">
                 <h3 className={`text-xl font-bold bg-gradient-to-r ${category.color} bg-clip-text text-transparent group-hover:scale-105 transition-transform`}>
                   {category.title}
@@ -57,7 +57,7 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div 
                     key={skillIndex}
-                    className="p-3 bg-gradient-to-r from-gray-800/50 to-gray-700/50 rounded-lg text-center hover:from-blue-600/20 hover:to-purple-600/20 transition-all duration-300 transform hover:scale-105 border border-gray-600/30 hover:border-blue-500/50"
+                    className="p-3 bg-gradient-to-r from-gray-800/50 to-gray-700/50 rounded-lg text-center hover:from-slate-700/20 hover:to-stone-700/20 transition-all duration-300 transform hover:scale-105 border border-gray-600/30 hover:border-slate-600/50"
                   >
                     <span className="text-sm text-gray-300 font-medium">
                       {skill}
@@ -101,8 +101,8 @@ const Skills = () => {
                     />
                     <defs>
                       <linearGradient id="gradient">
-                        <stop offset="0%" stopColor="#3B82F6" />
-                        <stop offset="100%" stopColor="#8B5CF6" />
+                        <stop offset="0%" stopColor="#64748B" />
+                        <stop offset="100%" stopColor="#78716C" />
                       </linearGradient>
                     </defs>
                   </svg>

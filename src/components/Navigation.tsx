@@ -15,11 +15,11 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-md border-b border-purple-500/20">
+    <nav className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-md border-b border-slate-600/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            <span className="text-2xl font-bold bg-gradient-to-r from-slate-400 to-stone-500 bg-clip-text text-transparent">
               RB
             </span>
           </div>
@@ -30,10 +30,10 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-white hover:text-blue-400 transition-colors duration-300 relative group"
+                className="text-white hover:text-slate-300 transition-colors duration-300 relative group"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </div>
@@ -42,7 +42,7 @@ const Navigation = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-blue-400 transition-colors"
+              className="text-white hover:text-slate-300 transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -58,7 +58,7 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="block px-3 py-2 text-white hover:text-blue-400 transition-colors"
+                className="block px-3 py-2 text-white hover:text-slate-300 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

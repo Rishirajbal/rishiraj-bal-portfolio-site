@@ -40,37 +40,37 @@ const Certifications = () => {
     <section className="py-20 px-4 bg-black/20">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-slate-400 to-stone-500 bg-clip-text text-transparent">
             Certifications
           </span>
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
-            <Card key={index} className="p-6 bg-white/5 backdrop-blur-sm border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 transform hover:-translate-y-1 group">
+            <Card key={index} className="p-6 bg-white/5 backdrop-blur-sm border-stone-600/20 hover:border-stone-600/40 transition-all duration-300 transform hover:-translate-y-1 group">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center space-x-3">
                   {cert.inProgress ? (
-                    <div className="p-2 bg-yellow-500/20 rounded-full">
-                      <Award size={20} className="text-yellow-400" />
+                    <div className="p-2 bg-amber-600/20 rounded-full">
+                      <Award size={20} className="text-amber-400" />
                     </div>
                   ) : (
-                    <div className="p-2 bg-green-500/20 rounded-full">
-                      <CheckCircle size={20} className="text-green-400" />
+                    <div className="p-2 bg-emerald-600/20 rounded-full">
+                      <CheckCircle size={20} className="text-emerald-400" />
                     </div>
                   )}
                 </div>
                 
                 <span className={`text-xs px-2 py-1 rounded-full ${
                   cert.inProgress 
-                    ? 'bg-yellow-500/20 text-yellow-300 border border-yellow-500/30' 
-                    : 'bg-green-500/20 text-green-300 border border-green-500/30'
+                    ? 'bg-amber-600/20 text-amber-300 border border-amber-600/30' 
+                    : 'bg-emerald-600/20 text-emerald-300 border border-emerald-600/30'
                 }`}>
                   {cert.status}
                 </span>
               </div>
               
-              <h3 className="text-lg font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+              <h3 className="text-lg font-bold text-white mb-3 group-hover:text-slate-300 transition-colors">
                 {cert.title}
               </h3>
               

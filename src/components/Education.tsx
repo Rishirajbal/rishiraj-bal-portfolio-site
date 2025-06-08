@@ -34,31 +34,31 @@ const Education = () => {
     <section className="py-20 px-4 bg-black/20">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-slate-400 to-stone-500 bg-clip-text text-transparent">
             Education
           </span>
         </h2>
 
         <div className="space-y-8">
           {education.map((edu, index) => (
-            <Card key={index} className="p-8 bg-white/5 backdrop-blur-sm border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 transform hover:-translate-y-1 group">
+            <Card key={index} className="p-8 bg-white/5 backdrop-blur-sm border-stone-600/20 hover:border-stone-600/40 transition-all duration-300 transform hover:-translate-y-1 group">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div className="flex-1">
                   <div className="flex items-center space-x-3 mb-2">
-                    <div className="p-2 bg-purple-500/20 rounded-full">
-                      <GraduationCap size={20} className="text-purple-400" />
+                    <div className="p-2 bg-stone-600/20 rounded-full">
+                      <GraduationCap size={20} className="text-stone-400" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors">
+                    <h3 className="text-2xl font-bold text-white group-hover:text-stone-300 transition-colors">
                       {edu.degree}
                     </h3>
                     {edu.current && (
-                      <span className="bg-blue-500/20 text-blue-300 text-xs px-2 py-1 rounded-full border border-blue-500/30">
+                      <span className="bg-slate-600/20 text-slate-300 text-xs px-2 py-1 rounded-full border border-slate-600/30">
                         Current
                       </span>
                     )}
                   </div>
                   
-                  <h4 className="text-xl text-blue-400 font-semibold mb-1">
+                  <h4 className="text-xl text-slate-400 font-semibold mb-1">
                     {edu.institution}
                   </h4>
                   

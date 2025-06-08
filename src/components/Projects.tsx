@@ -53,20 +53,20 @@ const Projects = () => {
     <section id="projects" className="py-20 px-4 bg-black/20">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-slate-400 to-stone-500 bg-clip-text text-transparent">
             Featured Projects
           </span>
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {projects.filter(p => p.featured).map((project, index) => (
-            <Card key={index} className="group p-8 bg-white/5 backdrop-blur-sm border-purple-500/20 hover:border-purple-500/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20">
+            <Card key={index} className="group p-8 bg-white/5 backdrop-blur-sm border-stone-600/20 hover:border-stone-600/40 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-stone-600/20">
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                <h3 className="text-2xl font-bold text-white group-hover:text-slate-300 transition-colors">
                   {project.title}
                 </h3>
                 <div className="flex space-x-2">
-                  <Button asChild size="sm" variant="ghost" className="p-2 hover:bg-purple-600/20">
+                  <Button asChild size="sm" variant="ghost" className="p-2 hover:bg-stone-700/20">
                     <a href={project.repo} target="_blank" rel="noopener noreferrer">
                       <Github size={18} />
                     </a>
@@ -82,7 +82,7 @@ const Projects = () => {
                 {project.tags.map((tag, tagIndex) => (
                   <span 
                     key={tagIndex} 
-                    className="px-3 py-1 bg-gradient-to-r from-blue-600/30 to-purple-600/30 rounded-full text-sm text-blue-200 border border-blue-500/30"
+                    className="px-3 py-1 bg-gradient-to-r from-slate-700/30 to-stone-700/30 rounded-full text-sm text-slate-200 border border-slate-600/30"
                   >
                     {tag}
                   </span>
@@ -94,12 +94,12 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.filter(p => !p.featured).map((project, index) => (
-            <Card key={index} className="group p-6 bg-white/5 backdrop-blur-sm border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 transform hover:-translate-y-1">
+            <Card key={index} className="group p-6 bg-white/5 backdrop-blur-sm border-stone-600/20 hover:border-stone-600/40 transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex justify-between items-start mb-3">
-                <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                <h3 className="text-xl font-bold text-white group-hover:text-slate-300 transition-colors">
                   {project.title}
                 </h3>
-                <Button asChild size="sm" variant="ghost" className="p-2 hover:bg-purple-600/20">
+                <Button asChild size="sm" variant="ghost" className="p-2 hover:bg-stone-700/20">
                   <a href={project.repo} target="_blank" rel="noopener noreferrer">
                     <Github size={16} />
                   </a>
@@ -114,7 +114,7 @@ const Projects = () => {
                 {project.tags.slice(0, 3).map((tag, tagIndex) => (
                   <span 
                     key={tagIndex} 
-                    className="px-2 py-1 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded text-xs text-blue-200"
+                    className="px-2 py-1 bg-gradient-to-r from-slate-700/20 to-stone-700/20 rounded text-xs text-slate-200"
                   >
                     {tag}
                   </span>
