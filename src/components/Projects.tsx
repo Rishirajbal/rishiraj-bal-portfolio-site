@@ -65,13 +65,12 @@ const Projects = () => {
                 <h3 className="text-2xl font-bold text-white group-hover:text-slate-300 transition-colors">
                   {project.title}
                 </h3>
-                <div className="flex space-x-2">
-                  <Button asChild size="sm" variant="ghost" className="p-2 hover:bg-stone-700/20">
-                    <a href={project.repo} target="_blank" rel="noopener noreferrer">
-                      <Github size={18} />
-                    </a>
-                  </Button>
-                </div>
+                <Button asChild size="sm" className="bg-slate-700/50 hover:bg-slate-600/70 text-white border border-slate-600/50 hover:border-slate-500/70">
+                  <a href={project.repo} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+                    <Github size={18} />
+                    <span className="hidden sm:inline">GitHub</span>
+                  </a>
+                </Button>
               </div>
               
               <p className="text-gray-300 mb-6 leading-relaxed">
@@ -99,9 +98,10 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-white group-hover:text-slate-300 transition-colors">
                   {project.title}
                 </h3>
-                <Button asChild size="sm" variant="ghost" className="p-2 hover:bg-stone-700/20">
-                  <a href={project.repo} target="_blank" rel="noopener noreferrer">
+                <Button asChild size="sm" className="bg-slate-700/50 hover:bg-slate-600/70 text-white border border-slate-600/50 hover:border-slate-500/70 px-3">
+                  <a href={project.repo} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1">
                     <Github size={16} />
+                    <span className="text-xs">GitHub</span>
                   </a>
                 </Button>
               </div>
