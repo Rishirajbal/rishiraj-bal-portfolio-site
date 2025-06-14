@@ -14,11 +14,27 @@ const Hero = () => {
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <div className="animate-fade-in">
+          {/* Profile Image */}
+          <div className="mb-8 flex justify-center">
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/a23f195c-8da7-42b5-aa68-1f0ee1f2e4ba.png" 
+                alt="Rishiraj Bal" 
+                className="w-48 h-48 rounded-full object-cover border-4 border-gradient-to-r from-slate-400 to-stone-500 shadow-2xl"
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-slate-400/20 to-stone-500/20 animate-pulse"></div>
+            </div>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="bg-gradient-to-r from-slate-400 via-stone-500 to-gray-500 bg-clip-text text-transparent">
               Rishiraj Bal
             </span>
           </h1>
+          
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            RB | AI/ML Engineer
+          </p>
           
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
             B.Tech CSE student at KIIT, pushing the boundaries of AI/ML. 
