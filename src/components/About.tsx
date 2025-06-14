@@ -26,6 +26,11 @@ const About = () => {
                 practical applications, from reinforcement learning trading systems to zero-knowledge proof 
                 implementations.
               </p>
+
+              <p className="text-lg text-gray-300 leading-relaxed mt-4">
+                Beyond technology, I love traveling to new places, discovering great songs, gaming with friends, 
+                and making meaningful connections with people from all walks of life.
+              </p>
             </Card>
 
             <div className="flex justify-center space-x-6">
