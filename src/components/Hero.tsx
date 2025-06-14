@@ -20,12 +20,8 @@ const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Machine Learning | Quantum Computing | Blockchain Enthusiast
-          </p>
-          
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-            B.Tech CSE student at KIIT, pushing the boundaries of AI/ML and quantum computing. 
+            B.Tech CSE student at KIIT, pushing the boundaries of AI/ML. 
             Creator of RAG systems, Unity games, and privacy-preserving ZKP applications.
           </p>
 
