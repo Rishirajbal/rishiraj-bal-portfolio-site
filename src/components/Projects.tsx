@@ -1,9 +1,18 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "LangChain GenAI Chatbot",
+      description: "Interactive Streamlit-based chatbot leveraging LangChain framework for advanced conversational AI. Features document processing, context-aware responses, and seamless integration with various language models for enhanced user interaction.",
+      tags: ["Python", "Streamlit", "LangChain", "GenAI", "NLP"],
+      repo: "https://github.com/Rishirajbal",
+      demo: "https://playingwithlangchain.streamlit.app/",
+      featured: true
+    },
     {
       title: "YouTube RAG System",
       description: "Python-based Retrieval-Augmented Generation tool that extracts and processes YouTube video transcripts using Flask, FAISS, and Transformers. Features automatic transcript fetching with multi-language support and semantic search powered by Microsoft's Phi-2 model.",
@@ -64,12 +73,22 @@ const Projects = () => {
                 <h3 className="text-2xl font-bold text-white group-hover:text-slate-300 transition-colors">
                   {project.title}
                 </h3>
-                <Button asChild size="sm" className="bg-slate-700/50 hover:bg-slate-600/70 text-white border border-slate-600/50 hover:border-slate-500/70 flex-shrink-0">
-                  <a href={project.repo} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
-                    <Github size={18} />
-                    <span className="hidden sm:inline">GitHub</span>
-                  </a>
-                </Button>
+                <div className="flex space-x-2 flex-shrink-0">
+                  <Button asChild size="sm" className="bg-slate-700/50 hover:bg-slate-600/70 text-white border border-slate-600/50 hover:border-slate-500/70">
+                    <a href={project.repo} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+                      <Github size={18} />
+                      <span className="hidden sm:inline">GitHub</span>
+                    </a>
+                  </Button>
+                  {project.demo && (
+                    <Button asChild size="sm" className="bg-stone-700/50 hover:bg-stone-600/70 text-white border border-stone-600/50 hover:border-stone-500/70">
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+                        <ExternalLink size={18} />
+                        <span className="hidden sm:inline">Demo</span>
+                      </a>
+                    </Button>
+                  )}
+                </div>
               </div>
               
               <p className="text-gray-300 mb-6 leading-relaxed flex-grow">

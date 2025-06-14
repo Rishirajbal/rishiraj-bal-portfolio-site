@@ -14,18 +14,10 @@ const Experience = () => {
     },
     {
       title: "Research Intern",
-      company: "KIIT University",
-      period: "2024 – Present",
-      location: "Bhubaneswar",
-      description: "Conducting research in artificial intelligence and machine learning, focusing on advanced neural networks and quantum computing applications.",
-      current: true
-    },
-    {
-      title: "Data Analytics Intern",
       company: "Sparklehood",
       period: "2024",
       location: "Remote",
-      description: "Analyzed complex datasets, created visualizations, and provided insights for business decision-making.",
+      description: "Conducted research in artificial intelligence and machine learning, analyzed complex datasets, created visualizations, and provided insights for business decision-making.",
       current: false
     },
     {

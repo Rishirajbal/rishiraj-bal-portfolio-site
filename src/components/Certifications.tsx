@@ -6,9 +6,9 @@ const Certifications = () => {
   const certifications = [
     {
       title: "Google Cloud ML Certification",
-      status: "In Preparation",
+      status: "Completed",
       description: "Machine Learning certification focusing on GCP ML services and implementations",
-      inProgress: true
+      inProgress: false
     },
     {
       title: "Ethical Decision Making in Tech",
@@ -25,7 +25,7 @@ const Certifications = () => {
     {
       title: "Internship Certificate - Sparklehood",
       status: "Completed",
-      description: "Data Analytics internship with hands-on project experience",
+      description: "Research Analytics internship with hands-on project experience",
       inProgress: false
     },
     {
