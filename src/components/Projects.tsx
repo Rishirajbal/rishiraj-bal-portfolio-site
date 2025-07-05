@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
@@ -13,7 +12,7 @@ const Projects = () => {
       featured: true
     },
     {
-      title: "YouTube RAG System",
+      title: "YouTube RAG System", 
       description: "Python-based Retrieval-Augmented Generation tool that extracts and processes YouTube video transcripts using Flask, FAISS, and Transformers. Features automatic transcript fetching with multi-language support and semantic search powered by Microsoft's Phi-2 model.",
       tags: ["Python", "Flask", "FAISS", "Transformers", "RAG"],
       repo: "https://github.com/Rishirajbal/youtube_rag-system",
@@ -27,18 +26,11 @@ const Projects = () => {
       featured: true
     },
     {
-      title: "J.A.R.V.I.S./F.R.I.D.A.Y. Interface",
-      description: "Web-based AI assistant inspired by Marvel's cinematic AI systems. Features responsive HUD interface with camera integration, face/object recognition, voice commands, and OCR capabilities.",
-      tags: ["React", "AI", "Computer Vision", "Voice Recognition"],
-      repo: "https://github.com/Rishirajbal/J.A.R.V.I.S",
-      featured: true
-    },
-    {
       title: "ZKP Circom Crypto Blockchain",
       description: "Comprehensive toolkit for implementing Zero-Knowledge Proofs using Circom and SnarkJS. Features modular circuit designs, proof creation/verification, and Solidity smart contract integration.",
       tags: ["Circom", "ZK-SNARKs", "Blockchain", "Solidity", "Cryptography"],
       repo: "https://github.com/Rishirajbal/ZKP-circom-Crypto-blockchain",
-      featured: false
+      featured: true
     },
     {
       title: "Unity Game Development",
