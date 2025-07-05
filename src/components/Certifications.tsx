@@ -33,6 +33,18 @@ const Certifications = () => {
       status: "Completed",
       description: "Understanding corporate responsibility and sustainable business practices",
       inProgress: false
+    },
+    {
+      title: "IBM Qiskit Summer School of Quantum Computing",
+      status: "In Progress",
+      description: "Advanced quantum computing program focusing on quantum algorithms and practical implementations using IBM's Qiskit framework",
+      inProgress: true
+    },
+    {
+      title: "LangChain Academy Introduction to LangGraph",
+      status: "In Progress",
+      description: "Comprehensive course on building complex AI workflows and multi-agent systems using LangGraph framework",
+      inProgress: true
     }
   ];
 
