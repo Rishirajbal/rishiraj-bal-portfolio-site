@@ -12,7 +12,7 @@ const FutureProjects = () => {
       status: "In Development"
     },
     {
-      title: "Code Generation Tools",
+      title: "Code Generation Tools (RishiGPT+)",
       description: "Working on intelligent code generation tools that will automate and enhance the software development process. Further technical details and specifications will be revealed upon completion.",
       icon: Code,
       tags: ["Code Generation", "AI Tools", "Developer Productivity", "Automation"],
