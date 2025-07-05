@@ -9,6 +9,7 @@ const Projects = () => {
       description: "This app helps founders and daydreamers generate unique startup ideas, names, structures, launch plans, and growth strategies — all from a single prompt. Enter your company's mission or the problem you want to solve. The app then returns: A unique startup idea, A catchy brand name, Ideal team structure, Step-by-step launch plan, Long-term growth strategy",
       tags: ["Python", "Streamlit", "GenAI", "NLP", "Startup"],
       demo: "https://rishigpt.streamlit.app/",
+      repo: "https://github.com/Rishirajbal/RishiGPT.git",
       featured: true
     },
     {

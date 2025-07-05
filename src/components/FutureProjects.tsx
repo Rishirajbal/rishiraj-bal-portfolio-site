@@ -1,6 +1,6 @@
 
 import { Card } from "@/components/ui/card";
-import { Clock, Brain, MessageCircle, Code } from "lucide-react";
+import { Clock, Brain, Code } from "lucide-react";
 
 const FutureProjects = () => {
   const futureProjects = [
@@ -10,13 +10,6 @@ const FutureProjects = () => {
       icon: Brain,
       tags: ["Quantum ML", "CNN", "Medical Imaging", "AI Healthcare"],
       status: "In Development"
-    },
-    {
-      title: "Interactive RAG Chatbot",
-      description: "Building a fully interactive Retrieval-Augmented Generation chatbot with specialized knowledge in a domain that will be specified upon completion. Features advanced context understanding and real-time information retrieval.",
-      icon: MessageCircle,
-      tags: ["RAG", "NLP", "Conversational AI", "Information Retrieval"],
-      status: "In Planning"
     },
     {
       title: "Code Generation Tools",
