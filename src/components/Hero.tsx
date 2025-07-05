@@ -22,7 +22,6 @@ const Hero = () => {
                 alt="Rishiraj Bal" 
                 className="w-48 h-48 rounded-full object-cover border-4 border-gradient-to-r from-slate-400 to-stone-500 shadow-2xl"
               />
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-slate-400/20 to-stone-500/20 animate-pulse"></div>
             </div>
           </div>
 
@@ -33,7 +32,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            RB | AI/ML Engineer
+            RB | Enthusiastic about everything tech
           </p>
           
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">

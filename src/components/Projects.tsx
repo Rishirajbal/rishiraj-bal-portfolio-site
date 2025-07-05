@@ -6,10 +6,10 @@ import { Github, ExternalLink } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "GenAI Chatbot",
+      title: "RishiGPT",
       description: "This app helps founders and daydreamers generate unique startup ideas, names, structures, launch plans, and growth strategies — all from a single prompt. Enter your company's mission or the problem you want to solve. The app then returns: A unique startup idea, A catchy brand name, Ideal team structure, Step-by-step launch plan, Long-term growth strategy",
       tags: ["Python", "Streamlit", "GenAI", "NLP", "Startup"],
-      demo: "https://playingwithlangchain.streamlit.app/",
+      demo: "https://rishigpt.streamlit.app/",
       featured: true
     },
     {
